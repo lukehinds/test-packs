@@ -1,6 +1,6 @@
-[marketplaces.always-further]
+[marketplaces.lukehinds]
 source_type = "local"
-source = "$HOME/.codex/plugins/marketplaces/always-further"
+source = "$HOME/.codex/plugins/marketplaces/lukehinds"
 
-[plugins."nono@always-further"]
+[plugins."nono@lukehinds"]
 enabled = true

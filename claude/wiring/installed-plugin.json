@@ -1,10 +1,10 @@
 {
   "version": 2,
   "plugins": {
-    "nono@always-further": [
+    "nono@lukehinds": [
       {
         "scope": "user",
-        "installPath": "$HOME/.claude/plugins/cache/always-further/nono/1.0.0",
+        "installPath": "$HOME/.claude/plugins/cache/lukehinds/nono/1.0.0",
         "version": "1.0.0",
         "installedAt": "$NOW",
         "lastUpdated": "$NOW"

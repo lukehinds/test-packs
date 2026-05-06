@@ -42,6 +42,6 @@ We are aware of this and it is being fixed in codex upstream (kudos OpenAI for b
 
 ## Source
 
-`https://github.com/always-further/nono-packs/tree/main/codex`
+`https://github.com/always-further/test-packs/tree/main/codex`
 
 Published via Sigstore-signed releases triggered by tags matching `codex-v*`.

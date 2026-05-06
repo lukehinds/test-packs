@@ -1,19 +1,19 @@
 {
   "version": 2,
   "plugins": {
-    "nono@always-further": [
+    "nono@lukehinds": [
       {
         "scope": "user",
-        "installPath": "$HOME/.openclaw/plugins/cache/always-further/nono/1.0.0",
+        "installPath": "$HOME/.openclaw/plugins/cache/lukehinds/nono/1.0.0",
         "version": "1.0.0",
         "installedAt": "$NOW",
         "lastUpdated": "$NOW"
       }
     ],
-    "nono-hooks@always-further": [
+    "nono-hooks@lukehinds": [
       {
         "scope": "user",
-        "installPath": "$HOME/.openclaw/plugins/cache/always-further/nono-hooks/1.0.0",
+        "installPath": "$HOME/.openclaw/plugins/cache/lukehinds/nono-hooks/1.0.0",
         "version": "1.0.0",
         "installedAt": "$NOW",
         "lastUpdated": "$NOW"
