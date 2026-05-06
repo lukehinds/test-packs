@@ -133,8 +133,7 @@ NOT substitute placeholders, just write what is below):
 
 The profiles/ directory is read-only from inside the sandbox by
 design; drafts/ is the writable surface and the user promotes
-out-of-band. This is a new profile (not an edit of an existing
-one), so no .base hash file is needed.
+out-of-band.
 
 After writing, tell the user:
   Drafted $DEFAULT_PROFILE_NAME. Run \`nono profile promote $DEFAULT_PROFILE_NAME\`

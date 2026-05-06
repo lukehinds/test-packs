@@ -41,7 +41,7 @@ DO NOT suggest sudo, chmod, or system permission changes. Take these steps in or
    Option A (quick fix): exit and restart with the path allowed:
      nono run --allow /path/to/needed -- openclaw
 
-   Option B (persistent fix): draft a nono profile. The profiles/ directory is read-only from inside the sandbox; drafts go to profile-drafts/. Run \`nono profile guide\` for the schema, then write the profile JSON to ~/.config/nono/profile-drafts/<name>.json. If you are modifying an existing profile (not creating new), also write its sha256 to ~/.config/nono/profile-drafts/<name>.base. Tell the user:
+   Option B (persistent fix): draft a nono profile. The profiles/ directory is read-only from inside the sandbox; drafts go to profile-drafts/. Run \`nono profile guide\` for the schema, then write the profile JSON to ~/.config/nono/profile-drafts/<name>.json. Tell the user:
      Drafted <name>. Run \`nono profile promote <name>\` to review and apply, then start sessions with \`nono run --profile <name> -- openclaw\`.
 
 Step 1 is non-optional and must run before you reply."

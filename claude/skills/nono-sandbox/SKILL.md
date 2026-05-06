@@ -53,12 +53,9 @@ After diagnosing with `nono why`, present the user with options:
 
 2. **Write a profile draft** - if the user needs this access regularly, offer to draft a nono profile for them. The active profile directory `~/.config/nono/profiles/` is read-only from inside the sandbox by design, so drafts are written to `~/.config/nono/profile-drafts/` and the user promotes them out-of-band.
 
-   If the user agrees, run `nono profile guide` to get the full profile schema, then:
+   If the user agrees, run `nono profile guide` to get the full profile schema, then write the full profile JSON to `~/.config/nono/profile-drafts/<name>.json`. If a profile of that name already exists, you can read it from `~/.config/nono/profiles/<name>.json` first to base your edit on it.
 
-   - **Creating a new profile**: write the full profile JSON to `~/.config/nono/profile-drafts/<name>.json`.
-   - **Modifying an existing profile**: read `~/.config/nono/profiles/<name>.json`, compute its sha256, write the modified result to `~/.config/nono/profile-drafts/<name>.json`, and write the hash (hex, single line) to `~/.config/nono/profile-drafts/<name>.base`. The `.base` file lets `promote` detect concurrent edits.
-
-   Tell the user: `Updated draft for <name>. Run \`nono profile promote <name>\` to review and apply, then start sessions with \`nono run --profile <name> -- claude\`.`
+   Tell the user: `Drafted <name>. Run \`nono profile promote <name>\` to review and apply, then start sessions with \`nono run --profile <name> -- claude\`.`
 
 ## Checking what is allowed
 

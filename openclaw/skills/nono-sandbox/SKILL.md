@@ -51,7 +51,7 @@ Use this for paths the user only needs occasionally.
 
 The active profile directory `~/.config/nono/profiles/` is read-only from inside the sandbox by design. Drafts are written to `~/.config/nono/profile-drafts/` and the user promotes them out-of-band with `nono profile promote`.
 
-**Creating a new profile** — write the JSON to `~/.config/nono/profile-drafts/<chosen-name>.json` extending the active profile. Minimal example for read-only access:
+Write the JSON to `~/.config/nono/profile-drafts/<chosen-name>.json` extending the active profile. Minimal example for read-only access:
 
     {
       "extends": "openclaw",
@@ -61,7 +61,7 @@ The active profile directory `~/.config/nono/profiles/` is read-only from inside
 
 If the user is on a custom intermediate profile (e.g. `--profile openclaw-with-docs` extending `openclaw`), change `extends` to that profile's name so the new profile inherits all their customisations.
 
-**Modifying an existing profile** — read `~/.config/nono/profiles/<chosen-name>.json`, compute its sha256, write the modified result to `~/.config/nono/profile-drafts/<chosen-name>.json`, and write the hash (hex, single line) to `~/.config/nono/profile-drafts/<chosen-name>.base`. The `.base` file lets `promote` detect concurrent edits.
+If a profile of that name already exists, you can read it from `~/.config/nono/profiles/<chosen-name>.json` first and base your edit on it.
 
 Filesystem field choices:
 - `"read"` — read-only directory or file access

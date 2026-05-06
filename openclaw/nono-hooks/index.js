@@ -59,11 +59,10 @@ module.exports = function register(api) {
       '2. Present the user with exactly these two options:',
       '   Option A (quick fix):  nono run --allow /path/to/needed -- openclaw',
       '   Option B (persistent): draft a profile to ~/.config/nono/profile-drafts/<name>.json',
-      '                          (profiles/ is read-only from the sandbox by design;',
-      '                          if modifying an existing profile, also write its sha256',
-      '                          to ~/.config/nono/profile-drafts/<name>.base), then tell',
-      '                          the user: run `nono profile promote <name>` to review',
-      '                          and apply, then start with `nono run --profile <name> -- openclaw`',
+      '                          (profiles/ is read-only from the sandbox by design),',
+      '                          then tell the user: run `nono profile promote <name>`',
+      '                          to review and apply, then start with',
+      '                          `nono run --profile <name> -- openclaw`',
     ].join('\n');
 
     if (typeof content === 'string') {

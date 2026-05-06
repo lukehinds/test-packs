@@ -41,7 +41,7 @@ DO NOT ask the user for permission. Take these steps in order, every time:
    Option A (quick fix): exit and restart with the path allowed:
      nono run --allow /path/to/needed -- claude
 
-   Option B (persistent fix): draft a nono profile. The profiles/ directory is read-only from inside the sandbox; drafts go to profile-drafts/. Run \`nono profile guide\` for the schema (also without asking), then write the profile JSON to ~/.config/nono/profile-drafts/<name>.json. If you are modifying an existing profile (not creating new), also write its sha256 to ~/.config/nono/profile-drafts/<name>.base. Tell the user:
+   Option B (persistent fix): draft a nono profile. The profiles/ directory is read-only from inside the sandbox; drafts go to profile-drafts/. Run \`nono profile guide\` for the schema (also without asking), then write the profile JSON to ~/.config/nono/profile-drafts/<name>.json. Tell the user:
      Drafted <name>. Run \`nono profile promote <name>\` to review and apply, then start sessions with \`nono run --profile <name> -- claude\`.
 
 Step 1 is non-optional and must run before you reply. Do not ask whether to run it."
