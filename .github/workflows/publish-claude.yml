@@ -40,8 +40,8 @@ jobs:
         with:
           publish: "true"
           package-name: claude
-          package-namespace: always-further
+          package-namespace: lukehinds
           package-version: ${{ github.ref_name }}
           package-path: claude
-          registry-url: https://registry.nono.sh/api/v1
+          registry-url:  https://lukehinds.rat.alwaysfurther.us/api/v1
           files: ${{ steps.files.outputs.files }}
