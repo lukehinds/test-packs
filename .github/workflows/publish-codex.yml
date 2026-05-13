@@ -36,11 +36,11 @@ jobs:
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
-      - uses: always-further/agent-sign@c9426f1a00f823dd53e7b9068d910a68b43e49e9 # v0.0.11
+      - uses: lukehinds/agent-sign@c9426f1a00f823dd53e7b9068d910a68b43e49e9 # v0.0.11
         with:
           publish: "true"
           package-name: codex
-          package-namespace: always-further
+          package-namespace: lukehinds
           package-version: ${{ github.ref_name }}
           package-path: codex
           registry-url: https://registry.nono.sh/api/v1

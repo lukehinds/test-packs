@@ -1,6 +1,6 @@
-# test-packs
+# nono-packs
 
-`test-packs` is the package and plugin registry for the `nono` ecosystem.
+`nono-packs` is the package and plugin registry for the `nono` ecosystem.
 
 This repository is the source for installable packs that extend agent runtimes with `nono`-specific integrations such as:
 

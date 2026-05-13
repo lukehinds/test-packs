@@ -7,7 +7,7 @@
     "url": "https://github.com/lukehinds"
   },
   "homepage": "https://nono.sh",
-  "repository": "https://github.com/lukehinds/test-packs/tree/main/claude",
+  "repository": "https://github.com/lukehinds/nono-packs/tree/main/claude",
   "license": "Apache-2.0",
   "keywords": ["nono", "sandbox", "security", "capabilities"]
 }
