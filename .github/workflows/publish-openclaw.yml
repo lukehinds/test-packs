@@ -1,7 +1,7 @@
 name: Publish openclaw pack
 on:
   push:
-    tags: ["openclaw-v*"]
+    tags: ["openclaw-*"]
   workflow_dispatch:
 
 # Inlined (rather than calling a reusable _publish.yml) so the OIDC
@@ -43,5 +43,5 @@ jobs:
           package-namespace: lukehinds
           package-version: ${{ github.ref_name }}
           package-path: openclaw
-          registry-url: https://registry.nono.sh/api/v1
+          registry-url: https://lukehinds.rat.alwaysfurther.us/api/v1
           files: ${{ steps.files.outputs.files }}
